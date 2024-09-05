@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop-up project </title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <div class="headline">
+        <h1> pop-up project </h1>
+    </div>
+</head>
+<body>
+    <button onclick="showModal()"> Click</button>
+
+    <div id="modal1" class="modal-wrapper">
+        <div class="modal">
+            <h1> This is heading
+                <button onclick="closeModal()"> close</button>
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quasi, ducimus temporibus perferendis aliquam consequuntur, itaque ad doloribus nulla eius reprehenderit officia dicta explicabo eligendi modi debitis vero rerum non! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum molestiae corrupti cumque a laborum at, labore debitis inventore. Veniam repellendus culpa, officiis repellat cum praesentium corrupti vel quo non Lorem.</p>
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            document.getElementById("modal1").style.display = "block"; // Corrected ID
+        }
+
+        function closeModal() {
+            document.getElementById("modal1").style.display = "none"; // Corrected ID
+        }
+    </script>
+</body>
+</html>
